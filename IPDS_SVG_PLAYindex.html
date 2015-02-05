@@ -16,6 +16,7 @@
             margin-right:1px;
         }
         .treeNode{
+            vertical-align: middle;
             border: solid #dcdcdc 1px;
             display: inline-block;
             padding: 1px 25px 1px 25px;
@@ -53,30 +54,32 @@
         }
         .testtext{
             display: inline-block;
+            position: relative;
+
             -webkit-transform: rotate(300deg);
+
             border-bottom: dashed #dcdcdc 1px;
             border-top: dashed #dcdcdc 1px;
             width: 100PX;
             height: 30px;
-            padding: 0px;
-            overflow: hidden;
-            font-size: 12px;
-            margin-left: -12px;
-            position: relative;
             bottom:-33px;
-            text-align: center;
-            vertical-align: middle;
+            padding: 0px;
+            font-size: 12px;
+
+            text-align: left;
+            margin-left: -12px;
+            overflow: hidden;
+
+            line-height: 30px;
         }
         .testtext1{
             left: 5px;
-
          }
         .testtext2{
             left: -50px;
-
         }
         .testtext3{
-            left: -110px
+            left: -105px;
         }
         .visually-hidden{
             display: none;
@@ -141,10 +144,10 @@
 
 <svg  width="30px" height="35px" class="visually-hidden">
     <g id="svgtemplate">
-        <rect class="N" x="1" y="1"  width="25%"; height="100%"  style="fill:rgb(42, 149, 198);"/>
-        <rect class="C" x="25%" y="1" width="25%" height="100%" style="fill:rgb(66, 175, 61);" />
-        <rect class="A" x="50%" y="1" width="10%" height="100%" style="fill:rgb(244, 242, 25)"/>
-        <rect class="NYC" x="60%" y="1" width="40%" height="100%" style="fill:rgb(222, 74, 49)">
+        <rect class="N" x="1" y="1"  width="25%"; height="100%"  style="fill:#0083D7;"/>
+        <rect class="C" x="25%" y="1" width="25%" height="100%" style="fill:#009900;" />
+        <rect class="A" x="50%" y="1" width="10%" height="100%" style="fill:#FFFF00"/>
+        <rect class="NYC" x="60%" y="1" width="40%" height="100%" style="fill:#FF3300">
             <title>
                 I am hovering over the text
             </title>
@@ -181,13 +184,13 @@
 <div id="listview">
     <div id="listviewheader">
         <div class="testtext testtext1">
-            helllkjhkljhlkjhlkjhlkjhlkjhlkjho
+            <span>Alex Chapman</span>
         </div>
         <div class="testtext testtext2">
-            helllkjhkljhlkjhkjhlkjhlkjhlkjho
+            Sasha Chapman
         </div>
         <div class="testtext testtext3">
-            helllkjhkljhlkjhlkjhlkjhlkjhlkjho
+            Saffron Chapman
         </div>
     </div>
     <div class="trainingContainer">
