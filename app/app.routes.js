@@ -6,9 +6,9 @@
 
     angular
         .module('ShopkinsApp')
-        .config(["$routeProvider",routes]);
+        .config(['$routeProvider',routes]);
 
-    function routes() {
+    function routes($routeProvider) {
         $routeProvider.
             when('/login', {
                 templateUrl: 'app/components/authentication/loginView.html',

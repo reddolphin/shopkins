@@ -5,7 +5,7 @@
      function HomeController(){
             var vm = this;
 
-            vm.message=message;
+            vm.message=message();
             vm.title = 'Avengers';
 
             function message() {
