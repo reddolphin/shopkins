@@ -11,8 +11,6 @@
             function message() {
                 return 'This is Show orders screen';
             }
-
         }
-
      angular.module('ShopkinsApp').controller('HomeController',[HomeController]);
 })();
