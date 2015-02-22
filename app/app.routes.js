@@ -20,6 +20,11 @@
                 controller: 'SignupController',
                 controllerAs: 'vm'
             }).
+            when('/shopkinsviewer', {
+                templateUrl: 'app/components/viewshopkins/ShopkinsViewerView.html',
+                controller: 'ShopkinsViewerController',
+                controllerAs: 'vm'
+            }).
             otherwise({
                 templateUrl: 'app/components/home/homeView.html',
                 controller: 'HomeController',
