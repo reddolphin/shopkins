@@ -1,24 +1,18 @@
 /**
+ * Created by alex on 16/04/2015.
+ */
+/**
  * Created by alex on 21/02/2015.
  */
 (function(){
     angular
         .module('ShopkinsApp')
-        .controller('ShopkinsViewerController',ShopkinsViewerController);
+        .controller('Table1Controller',Table1Controller);
 
-    ShopkinsViewerController.$inject=['ShopkinsViewerService'];
-
-    function ShopkinsViewerController(ShopkinsViewerService){
+    function Table1Controller(){
         var vm = this;
 
-        vm.message=message();
         vm.getLogs=GetLogs;
-
-        vm.show=ShopkinsViewerService.someValue;
-
-        function message() {
-            return 'This is Shopkins Viewer';
-        }
 
         function GetLogs(rc){
             var ret =[];

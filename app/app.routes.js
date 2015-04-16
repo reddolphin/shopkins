@@ -25,6 +25,11 @@
                 controller: 'ShopkinsViewerController',
                 controllerAs: 'vm'
             }).
+            when('/tools/tables/table1', {
+                templateUrl: 'app/components/tools/tables/table1/Table1.html',
+                controller: 'Table1Controller',
+                controllerAs: 'vm'
+            }).
             otherwise({
                 templateUrl: 'app/components/home/homeView.html',
                 controller: 'HomeController',

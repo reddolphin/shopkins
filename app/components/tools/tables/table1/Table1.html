@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="app/components/tools/tables/table1/Table1.css"/>
+<h2>Table 1</h2>
+
+<section class="">
+    <div class="container">
+        <table class='CSSTableGeneratorX'>
+            <thead>
+            <tr class="header">
+                <th>RC<div>RC</div></th>
+                <th>Revision<div>Revision</div></th>
+                <th>Author<div>Author</div></th>
+                <th>Date<div>Date</div></th>
+                <th>Comment<div>Comment</div></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="log in vm.getLogs(-1) track by $index | filter : -1">
+                <td>{{ log.RC}}</td>
+                <td>{{ log.revision }}</td>
+                <td>{{ log.author}}</td>
+                <td>{{ log.date}}</td>
+                <td><a href="https://rally1.rallydev.com/#/search?keywords={{ log.msg}}">{{ log.msg}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
